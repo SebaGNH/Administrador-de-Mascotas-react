@@ -16,6 +16,7 @@ h1, h2  {
   font-weight: 700;
   text-transform: uppercase;
 
+
   /* //font-family: 'Staatliches', cursive; */
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
@@ -104,4 +105,13 @@ form{
   background-color: #404040;
   padding: 20px;
   border-radius: 3px;
+}
+
+h1, h2  {  
+  /* background-color: #404040; */
+  padding: 1.5rem 0;
+}
+
+.label-error {
+  color: red;
 }
