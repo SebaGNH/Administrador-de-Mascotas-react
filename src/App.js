@@ -37,6 +37,7 @@ const App = () => {
     //useEffect - Ciclos de vida 
     //equivale a componentDidMount y componentDidUpdate, escucha cada vez que cambia
     useEffect( ()=>{ //Se ejecuta cuando el componente está listo o cuando hay cambios en el mismo
+        let citasInicialesLocalStorage = JSON.parse(localStorage.getItem('citasPactadas')); //Redeclaramos para evitar errores
         if (citasInicialesLocalStorage) {//Si tiene citas en LocalStorage, guarda las citasPactadas en Local, las estaría actualizando
             localStorage.setItem('citasInicialesLocalStorage', JSON.stringify(citasPactadas));
         }else{//Si no hay citas "eliminamos" agrega un arreglo vacío
