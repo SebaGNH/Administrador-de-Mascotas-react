@@ -33,6 +33,20 @@ const App = () => {
     //Mensaje Condicional    
     const titulo_citas = citasPactadas.length === 0 ? 'No hay Citas' : 'Administra tus citas';
 
+    //Esta es otra manera de mostrar sin llenar de código en html
+    let cita_map = <p>No hay Citas</p>
+    if (citasPactadas.length > 0) {
+        cita_map = citasPactadas.map((citasPactadas)=>(
+            <Cita 
+                key={citasPactadas.id}
+                citasPactadas={citasPactadas}
+                eliminarCita={eliminarCita}
+                />
+        ))
+    }
+
+
+
 
     //useEffect - Ciclos de vida 
     //equivale a componentDidMount y componentDidUpdate, escucha cada vez que cambia
@@ -48,6 +62,8 @@ const App = () => {
     //Si le pasamos un hook como "citasPactadas", este trabajará cada vez que este cambie
 
 
+    
+
     return ( 
     <>
         {/* <h1>Administrador de Pacientes</h1> //Lo borro temporalmente para usar toda la pantalla*/}
@@ -62,13 +78,14 @@ const App = () => {
 
                 <div className="one-half column">                
                     <h2>{titulo_citas}</h2>
-                    {citasPactadas.map((citasPactadas)=>(
+                    {cita_map}
+                    {/* {citasPactadas.map((citasPactadas)=>(
                         <Cita 
                             key={citasPactadas.id}
                             citasPactadas={citasPactadas}
                             eliminarCita={eliminarCita}
                             />
-                    ))}
+                    ))} */}
                 </div>
             </div>
         </div>
