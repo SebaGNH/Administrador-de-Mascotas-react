@@ -21,7 +21,27 @@ h1, h2  {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
 }
-.lista-citas .media {
+
+
+
+body{
+  background-color: #292929;
+  color: #ccc;
+}
+form{
+  background-color: #404040;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+h1, h2  {  
+  /* background-color: #404040; */
+  padding: 1.5rem 0;
+  font-size: 2em;
+}
+
+
+/* .lista-citas .media {
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 3rem;
 }
@@ -37,13 +57,13 @@ h1, h2  {
 }
 .lista-citas .media-body span {
   font-weight: bold;
-}
+} */
 
-label {
+/* label {
   color: white;
-}
+} */
 
-input[type="date"],
+/* input[type="date"],
 input[type="time"] {
   height: 38px;
   padding: 6px 10px;
@@ -52,7 +72,7 @@ input[type="time"] {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
-}
+} */
 
 /* .cita {
   padding: 2rem;
@@ -78,52 +98,38 @@ input[type="time"] {
 
 } */
 
-.button.eliminar,
+/* .button.eliminar,
 .button.eliminar:hover {
   background-color: #c10059;
   color: white;
   margin-top: 2rem;
-}
+} */
 
-.alerta-error {
+/* .alerta-error {
   background-color: white;
   color: red;
   padding: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
-  text-align: center;
+  text-align: center;*/
   /* font-family:  'Staatliches', cursive; */
-  font-family: 'Roboto', sans-serif;
-}
+/*   font-family: 'Roboto', sans-serif;
+}  */
 
 /* Mis Estilos */
 
-body{
-  background-color: #292929;
-  color: #ccc;
-}
-form{
-  background-color: #404040;
-  padding: 20px;
-  border-radius: 3px;
-}
 
-h1, h2  {  
-  /* background-color: #404040; */
-  padding: 1.5rem 0;
-  font-size: 2em;
-}
 
-.label-error {
+/* .label-error {
   color: red;
-}
+} */
 
 /* .cita {
   background: #7a7a7a;
   border-bottom: 1px solid #adadad;
 } */
 
-.button.eliminar{
+/* .button.eliminar{
   border: 1px solid #adadad;
   background-color: #7a7a7a;
   text-transform: uppercase;
@@ -133,4 +139,4 @@ h1, h2  {
   border: 1px solid #adadad;
   color: white;
   margin-top: 2rem;
-}
+} */

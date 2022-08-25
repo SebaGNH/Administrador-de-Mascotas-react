@@ -1,3 +1,4 @@
+/* Cita Pactada  ----------------------- */
 .cita {
     padding: 2rem;
     background: #7a7a7a;
@@ -21,7 +22,19 @@
     font-weight: normal;
 }
 
-
+/* Botón Eliminar  ----------------------- */
+.button_eliminar{
+    background-color: #7a7a7a;
+    border: 1px solid #adadad;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+.button_eliminar:hover {
+    background-color: #c10059;
+    border: 1px solid #adadad;
+    color: white;
+}
 
 
 
@@ -35,34 +48,4 @@
 
 /* ----------------------------------------- */
 
-.button.eliminar,
-.button.eliminar:hover {
-  background-color: #c10059;
-  color: white;
-  margin-top: 2rem;
-}
 
-.alerta-error {
-  background-color: white;
-  color: red;
-  padding: 1rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  /* font-family:  'Staatliches', cursive; */
-  font-family: 'Roboto', sans-serif;
-}
-
-
-  
-  .button.eliminar{
-    border: 1px solid #adadad;
-    background-color: #7a7a7a;
-    text-transform: uppercase;
-  }
-  .button.eliminar:hover {
-    background-color: #c10059;
-    border: 1px solid #adadad;
-    color: white;
-    margin-top: 2rem;
-  }

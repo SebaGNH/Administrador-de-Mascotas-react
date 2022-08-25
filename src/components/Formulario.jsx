@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types'
-
+import styles from './Formulario.module.css'
 
 const Formulario = ({crearCita}) => {
 
@@ -66,12 +66,12 @@ const Formulario = ({crearCita}) => {
         <>
             <h2>Crear Cita</h2>
             {error? //error es del estado
-                <p className="alerta-error">Todos los campos son Obligatorios</p>
+                <p className={styles.alerta_error}>Todos los campos son Obligatorios</p>
                 : null}
             <form action="" onSubmit={handleSubmit}>
             {error? //error es del estado
-                <label className="label-error">Nombre Mascota requerido!!!</label>
-                : <label htmlFor="mascota">Nombre Mascota</label>}
+                <label className={styles.label_error}>Nombre Mascota requerido!!!</label>
+                : <label className={styles.lbl_input} htmlFor="mascota">Nombre Mascota</label>}
                 {/* <label htmlFor="mascota">Nombre Mascota</label> */}
                     <input 
                         type="text" 
@@ -83,7 +83,7 @@ const Formulario = ({crearCita}) => {
                         />
 
 
-                <label htmlFor="propietario">Nombre Dueñni</label>
+                <label className={styles.lbl_input} htmlFor="propietario">Nombre Dueñni</label>
                 <input 
                     type="text" 
                     name="propietario" 
@@ -93,25 +93,25 @@ const Formulario = ({crearCita}) => {
                     value={cita.propietario}
                     />
 
-                <label htmlFor="fecha">Fecha</label>
+                <label className={styles.lbl_input} htmlFor="fecha">Fecha</label>
                 <input 
                     type="date" 
                     name="fecha" 
-                    className='u-full-width'
+                    className={`${styles.input_date_time} u-full-width`}
                     onChange={actualizarState}
                     value={cita.fecha}
                     />
 
-                <label htmlFor="date">Hora</label>
+                <label className={styles.lbl_input} htmlFor="hora">Hora</label>
                 <input 
                     type="time" 
                     name="hora" 
-                    className='u-full-width'
+                    className={`${styles.input_date_time} u-full-width`}
                     onChange={actualizarState}
                     value={cita.hora}
                     />
 
-                    <label htmlFor="sintomas">Síntomas</label>
+                    <label className={styles.lbl_input} htmlFor="sintomas">Síntomas</label>
                     <textarea 
                         name="sintomas" 
                         id="" 
