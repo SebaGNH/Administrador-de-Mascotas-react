@@ -1,3 +1,10 @@
+.form{
+    background-color: #404040;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+
 .lbl_input{
     color: white;
 }

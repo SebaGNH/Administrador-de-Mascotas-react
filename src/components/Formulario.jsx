@@ -68,7 +68,7 @@ const Formulario = ({crearCita}) => {
             {error? //error es del estado
                 <p className={styles.alerta_error}>Todos los campos son Obligatorios</p>
                 : null}
-            <form action="" onSubmit={handleSubmit}>
+            <form action="" onSubmit={handleSubmit} className={styles.form}>
             {error? //error es del estado
                 <label className={styles.label_error}>Nombre Mascota requerido!!!</label>
                 : <label className={styles.lbl_input} htmlFor="mascota">Nombre Mascota</label>}
