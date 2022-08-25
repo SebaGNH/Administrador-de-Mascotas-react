@@ -34,7 +34,7 @@ const App = () => {
     const titulo_citas = citasPactadas.length === 0 ? 'No hay Citas' : 'Administra tus citas';
 
     //Esta es otra manera de mostrar sin llenar de código en html
-    let cita_map = <p>No hay Citas</p>
+    let cita_map = null;
     if (citasPactadas.length > 0) {
         cita_map = citasPactadas.map((citasPactadas)=>(
             <Cita 

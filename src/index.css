@@ -54,7 +54,7 @@ input[type="time"] {
   box-sizing: border-box;
 }
 
-.cita {
+/* .cita {
   padding: 2rem;
   background: white;
   border-bottom: 1px solid #e1e1e1;
@@ -76,7 +76,7 @@ input[type="time"] {
 .cita p span {
   font-weight: normal;
 
-}
+} */
 
 .button.eliminar,
 .button.eliminar:hover {
@@ -118,10 +118,10 @@ h1, h2  {
   color: red;
 }
 
-.cita {
+/* .cita {
   background: #7a7a7a;
   border-bottom: 1px solid #adadad;
-}
+} */
 
 .button.eliminar{
   border: 1px solid #adadad;
